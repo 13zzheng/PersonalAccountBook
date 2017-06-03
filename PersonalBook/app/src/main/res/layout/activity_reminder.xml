@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reminder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="stu.edu.cn.zing.personalbook.dialog.ReminderDialog">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="记账提醒"
+        android:layout_width="match_parent"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/title_text_size"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_below="@id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/edittext_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒时间"
+            android:textSize="@dimen/primary_text_size"
+            android:textColor="@color/primary_text"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+            android:textSize="@dimen/secondary_text_size"
+            android:textColor="@color/scendary_text"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_reminder_enable"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll_time"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提醒启用"
+            android:layout_centerVertical="true"
+
+            android:textSize="@dimen/primary_text_size"
+            android:textColor="@color/primary_text"/>
+
+        <Switch
+            android:id="@+id/switch_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_public_book"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_height"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rl_reminder_enable"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重复提醒"
+            android:layout_centerVertical="true"
+
+            android:textSize="@dimen/primary_text_size"
+            android:textColor="@color/primary_text"/>
+
+        <Switch
+            android:id="@+id/switch_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_below="@id/rl_public_book"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/edittext_text_size"
+        android:clickable="false"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

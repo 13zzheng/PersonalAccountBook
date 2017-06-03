@@ -1,0 +1,128 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_background"
+    tools:context="stu.edu.cn.zing.personalbook.HomeFragments.PersonalFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:background="@color/statisical_analysis_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="个人设置"
+                    android:textSize="@dimen/title_text_size"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:background="@color/white_background"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户昵称"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/primary_text"/>
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="right"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textColor="@color/scendary_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@color/white_background"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="记账提醒"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/primary_text"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="right"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textColor="@color/scendary_text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:background="@color/white_background"
+                android:paddingStart="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码修改"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/primary_text"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注 销"
+                android:layout_marginTop="250dp"
+                android:background="@drawable/btn_logout"
+                android:textSize="@dimen/title_text_size"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_book_item_height"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="@dimen/list_book_item_height"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvWeek"
+                android:text="二"
+
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:background="@drawable/list_book_item_title_week"
+                />
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/list_book_tvlayout_padding"
+                android:paddingBottom="@dimen/list_book_tvlayout_padding"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvMonthDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="3月8日"
+                    android:textSize="@dimen/primary_text_size"
+                    android:textColor="@color/primary_text"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/scendary_text"
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/tvTotalPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥400.00"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:textColor="@color/payment_in"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lvBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null">
+
+    </ListView>
+</LinearLayout>

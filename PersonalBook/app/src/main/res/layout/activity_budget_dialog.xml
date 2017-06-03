@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_budget_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="stu.edu.cn.zing.personalbook.dialog.BudgetDialog">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预算设置"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/primary_text"/>
+    <TextView
+        android:id="@+id/tv_budget_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="预算启用"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_title"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="@color/primary_text"/>
+
+    <Switch
+        android:id="@+id/switch_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_budget_enable"
+        android:layout_alignParentEnd="true"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_budget_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_budget"
+        >
+        <TextView
+            android:id="@+id/tv_budget_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预算金额"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/primary_text_size"
+            android:textColor="@color/primary_text"/>
+
+        <EditText
+            android:id="@+id/et_budget_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:inputType="number"
+            android:hint="0.00"
+            android:textSize="@dimen/primary_text_size"
+            android:textColorHint="@color/primary_text"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_budget_value"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/primary_text_size"
+        android:layout_marginTop="15dp"
+        android:text="确定"/>
+
+
+
+</RelativeLayout>

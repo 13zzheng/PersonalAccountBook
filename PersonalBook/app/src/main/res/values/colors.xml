@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5722</color>
+    <color name="colorPrimaryDark">#ff5722</color>
+    <color name="colorPrimaryLight">#ffc107</color>
+    <color name="colorAccent">#757575</color>
+
+    <color name="colorPrimary_tran">#44ff5722</color>
+
+    <color name="transport">#00000000</color>
+    <color name="black">#000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="blue">#2196f3</color>
+    <color name="yellow">#ffeb3b</color>
+    <color name="gray">#757575</color>
+    <color name="trans_gray">#33757575</color>
+    <color name="light_gray">#bdbdbd</color>
+    <color name="gray_trans">#22757575</color>
+
+    <color name="s">#ffcdd2</color>
+    <color name="payment_in">#45c01a</color>
+    <color name="payment_out">#ff5722</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="scendary_text">#757575</color>
+
+    <color name="gray_background">#eeeeee</color>
+    <color name="white_background">#f5f5f5</color>
+
+    <color name="divider">#bdbdbd</color>
+
+    <color name="book_color">#ff5722</color>
+    <color name="statisical_analysis_color">#ff5722</color>
+    <color name="finanical_recommendation_color">#ff5722</color>
+    <color name="personal_color">#ff5722</color>
+
+    <color name="report_normal">#212121</color>
+    <color name="report_positive">#45c01a</color>
+    <color name="report_negative">#ff5722</color>
+    <color name="report_middle">#ffc107</color>
+    <color name="report_type">#ff5722</color>
+    <color name="report_member">#ff9800</color>
+
+    <color name="pie_input_color1">#45c01a</color>
+    <color name="pie_input_color2">#4caf50</color>
+    <color name="pie_input_color3">#88c34a</color>
+    <color name="pie_input_color4">#303f9f</color>
+    <color name="pie_input_color5">#448aff</color>
+    <color name="pie_input_color6">#3f51b5</color>
+    <color name="pie_input_color7">#0097a7</color>
+    <color name="pie_input_color8">#ffa000</color>
+    <color name="pie_input_color9">#ffc107</color>
+    <color name="pie_input_color10">#ff5722</color>
+
+    <color name="pie_output_color1">#ff5722</color>
+    <color name="pie_output_color2">#ffc107</color>
+    <color name="pie_output_color3">#e91e63</color>
+    <color name="pie_output_color4">#2196f3</color>
+    <color name="pie_output_color5">#bbdefb</color>
+    <color name="pie_output_color6">#f44336</color>
+    <color name="pie_output_color7">#00796b</color>
+    <color name="pie_output_color8">#cddc39</color>
+    <color name="pie_output_color9">#e040fb</color>
+    <color name="pie_output_color10">#03a9f4</color>
+
+
+
+
+
+
+</resources>

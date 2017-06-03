@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_finanical_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stu.edu.cn.zing.personalbook.finanicalreport.FinanicalReportActivity">
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/statisical_analysis_color">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5月份理财报告"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂时没有数据"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/primary_text_size"
+            android:textColor="@color/primary_text"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/rl_title">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月收入 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_input_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_positive"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_output"
+            android:layout_below="@id/ll_input"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月支出 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_negative"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_output"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月预算 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"
+                />
+
+            <TextView
+                android:id="@+id/tv_budget_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_positive"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_budget"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收支余额 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"
+                />
+
+            <TextView
+                android:id="@+id/tv_overage_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_1"
+                android:textColor="@color/report_middle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元，"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="占总收入 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_overage_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_positive"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_in_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@id/rl_budget">
+        <LinearLayout
+            android:id="@+id/ll_most_out_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_most_output_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/report_focus_3"
+                android:textColor="@color/report_normal"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是你当月消费最多的一天"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_most_out_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_most_out_1"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当天消费 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_most_output_day_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_1"
+                android:textColor="@color/report_negative"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_most_out_2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平均日收入 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_day_average_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_positive"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元，"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平均日消费 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_day_average_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_negative"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_in_out"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_most_rate_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费最频繁的类型 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_rate_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_type"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，一共 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_rate_type_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_middle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 笔。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_most_rate_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_most_rate_type"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费最频繁的成员 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_rate_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_member"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，一共 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_rate_member_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_middle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 笔。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_most_paymennt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_most_rate_member"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费金额最多的类型 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_payment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_type"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，一共 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_payment_type_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_negative"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_most_payment_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_most_paymennt_type"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消费金额最多的成员 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_payment_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_member"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="，一共 "
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+            <TextView
+                android:id="@+id/tv_output_payment_member_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textSize="@dimen/report_focus_2"
+                android:textColor="@color/report_negative"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 元。"
+                android:textSize="@dimen/report_normal"
+                android:textColor="@color/report_normal"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

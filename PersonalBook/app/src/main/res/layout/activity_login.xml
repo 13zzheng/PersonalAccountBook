@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+
+        <stu.edu.cn.zing.personalbook.mywidget.LineEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_account"
+            android:hint="@string/account"
+            android:maxLines="1"
+            android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+            android:drawableStart="@mipmap/icon_user"
+            android:textSize="@dimen/edittext_text_size"
+            android:background="@color/transport"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            />
+
+        <stu.edu.cn.zing.personalbook.mywidget.LineEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_password"
+            android:hint="@string/password"
+            android:maxLines="1"
+            android:drawableStart="@mipmap/icon_password"
+            android:drawablePadding="15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/edittext_text_size"
+            android:background="@color/transport"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="5dp"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/btn_login"
+            android:text="@string/login"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_login_shape"
+            />
+        <TextView
+            android:id="@+id/tv_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即注册"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal">
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/edittext_height"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="@color/primary_text"
+        />
+
+    <TextView
+        android:id="@+id/tv_input"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="@color/payment_in"
+        />
+
+    <TextView
+        android:id="@+id/tv_output"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="@color/payment_out"
+        />
+
+    <TextView
+        android:id="@+id/tv_average"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/primary_text_size"
+        android:textColor="@color/colorPrimaryLight"
+        />
+
+</LinearLayout>

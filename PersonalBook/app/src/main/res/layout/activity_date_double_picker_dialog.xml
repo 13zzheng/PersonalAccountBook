@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_date_double_picker_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="stu.edu.cn.zing.personalbook.dialog.DateDoublePickerDialog">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/primary_text"
+        android:text="2017年5月"/>
+
+    <LinearLayout
+        android:id="@+id/ll_picker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tv_title"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/primary_text_size"
+            android:text="从"/>
+
+        <DatePicker
+            android:id="@+id/date_picker1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:startYear="2000"
+            android:layout_marginLeft="10dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            ></DatePicker>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_picker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_picker1"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/primary_text_size"
+            android:text="到"/>
+
+        <DatePicker
+            android:id="@+id/date_picker2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:startYear="2000"
+            android:layout_marginLeft="10dp"
+            android:calendarViewShown="false"
+            android:spinnersShown="true"
+            android:datePickerMode="spinner"
+            ></DatePicker>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/ll_picker2"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/colorPrimary"
+        android:text="确定"/>
+</RelativeLayout>

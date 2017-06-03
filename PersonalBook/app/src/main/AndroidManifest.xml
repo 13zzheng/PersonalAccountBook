@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="stu.edu.cn.zing.personalbook">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user_login.LoginActivity" />
+        <activity android:name=".HomeFragments.HomeActivity" />
+        <activity
+            android:name=".user_regist.RegistActivity"
+            android:theme="@style/dialog" />
+        <activity android:name=".user_add_book.AddBookActivity" />
+        <activity
+            android:name=".dialog.BookItemTyoeDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.AddItemTypeDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BookItemMemberDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.AddItemMemberDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BookItemTradingWayDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.AddItemTradingWayDialog"
+            android:theme="@style/dialog" />
+        <activity android:name=".test.UserActivity" />
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".dialog.DatePickerDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BudgetDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.TimePickerDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.DateDoublePickerDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.StatisticalTypePickerDialog"
+            android:theme="@style/dialog" />
+        <activity android:name=".finanicalreport.FinanicalReportActivity" />
+        <activity android:name=".BookFindActivity" />
+        <activity
+            android:name=".dialog.PaymentPickerDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.FinderDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BookPickDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BookAddDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.PublicUsersDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.PublicUserAddDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BookModifyDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.BookItemDeleteDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.UserNameModifyDialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".dialog.ReminderDialog"
+            android:theme="@style/dialog" />
+        <activity android:name=".MonthComparedActivity" />
+        <activity
+            android:name=".dialog.YearPickerDialog"
+            android:theme="@style/dialog" />
+        <activity android:name=".dialog.PasswordModifyDialog"
+            android:theme="@style/dialog"></activity>
+    </application>
+
+</manifest>

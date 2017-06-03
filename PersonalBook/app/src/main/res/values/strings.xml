@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PersonalBook</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登 录</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="book">账 簿</string>
+    <string name="statisical_analysis">统计分析</string>
+    <string name="finanical_recommendation">理财推荐</string>
+    <string name="personal">个 人</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>
